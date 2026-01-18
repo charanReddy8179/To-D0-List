@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <title>planIt</title>
+    <style>
+        body{
+            margin:0;
+            background-color: black;
+            color:white;
+        }
+        h1{
+            font-family: "Cabin Sketch", sans-serif;
+            color:white;
+            font-size:72px;
+            margin-bottom:0px;
+        }
+        h2{
+            font-family:'Times New Roman', Times, serif;
+            color:yellow;
+        }
+        button{
+            padding:2vmin;
+            border-radius:1.4vmin;
+            border:none;
+            font-weight:700;
+            transition-duration: 1s;
+        }
+        a{
+            font-family:'Times New Roman', Times, serif;
+            text-decoration:none;
+        }
+        button:hover{
+            background-color:yellow;
+            scale:1.2;
+        }
+        .page1{
+            height:100vmin;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            animation: fadeIn 1.5s ease;
+        }
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(20px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page1">
+        <h1>planIt</h1>
+        <h2>From plan to productivity</h2>
+        <a href="page2.html"><button>get started!</button></a>
+    </div>
+</body>
+</html>
